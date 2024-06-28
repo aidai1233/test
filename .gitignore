@@ -35,6 +35,9 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+.env
+.env/
+
 
 # Installer logs
 pip-log.txt
@@ -128,9 +131,9 @@ celerybeat.pid
 # Environments
 .env
 .venv
-env/
+.env/
 venv/
-ENV/
+.env/
 env.bak/
 venv.bak/
 
@@ -151,6 +154,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+db.sqlite3
+db.sqlite3-journal
+review.db
+*.db-journal
+db.sqlite
+*.sqlite-journal
 
 # pytype static type analyzer
 .pytype/
